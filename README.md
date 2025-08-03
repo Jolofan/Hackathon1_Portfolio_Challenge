@@ -1,6 +1,6 @@
 # 🌐 Joseph Charles Jolofan Sakala – Portfolio Website
 
-Welcome to my personal portfolio website! This project is part of the **PLP Academy Hackathon 1: Portfolio Challenge (July 2025 Cohort)**. The site was built using **pure HTML and CSS**, as per the challenge guidelines.
+Welcome to my personal portfolio website! This project is part of the **PLP Academy Hackathon 1: Portfolio Challenge (July 2025 Cohort)**. The site was built using **HTML and CSS**, as per the challenge guidelines.
 
 ---
 
@@ -58,7 +58,7 @@ You can reach me through the contact form on the website or by email.
 
 This portfolio is deployed on **GitHub Pages** and can be accessed via the link below:
 
-🔗 [View Live Portfolio](https://your-github-username.github.io/portfolio-hackathon1/)
+🔗 [View Live Portfolio](https://jolofan.github.io/Hackathon1_Portfolio_Challenge/)
 
 > *(Replace with your actual GitHub Pages URL after deployment)*
 
