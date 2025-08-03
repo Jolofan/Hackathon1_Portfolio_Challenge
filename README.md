@@ -60,8 +60,6 @@ This portfolio is deployed on **GitHub Pages** and can be accessed via the link 
 
 🔗 [View Live Portfolio](https://jolofan.github.io/Hackathon1_Portfolio_Challenge/)
 
-> *(Replace with your actual GitHub Pages URL after deployment)*
-
 ---
 
 ## ✅ Technologies Used
@@ -75,5 +73,3 @@ This portfolio is deployed on **GitHub Pages** and can be accessed via the link 
 ## 🏆 Acknowledgements
 
 Thanks to the **PLP Academy**, mentors, and fellow learners for the opportunity to grow and explore the world of web development.
-
----
