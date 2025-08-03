@@ -1,0 +1,98 @@
+/* Apply basic font and background to entire website */
+body {
+  font-family: Arial, sans-serif; /* Sets the font for the whole page */
+  margin: 0;                      /* Removes default browser margin */
+  padding: 0;                     /* Removes default browser padding */
+  background: #f2f4f5;            /* Light grey background color */
+  color: #333;                    /* Dark grey text color */
+}
+
+/* Style the header section (top of the page) */
+header {
+  background-color: #0e76a8;     /* A strong blue background */
+  color: white;                  /* White text color */
+  padding: 20px;                 /* Space inside the header */
+  text-align: center;            /* Center the text */
+}
+
+/* Style the navigation links inside the header */
+nav a {
+  margin: 0 15px;                /* Add space between links */
+  color: white;                  /* Make links white */
+  text-decoration: none;         /* Remove underline */
+}
+
+/* Change link color on hover only */
+nav a:hover {
+  color: #009dff;                /* New color on hover (sky blue) */
+}
+
+/* Style all content sections */
+section {
+  padding: 20px;                 /* Space inside the section */
+  max-width: 800px;              /* Set a maximum width */
+  margin: auto;                  /* Center the section on the page */
+}
+
+/* Profile image styling – clean and small */
+.profile-pic {
+  width: 120px;            /* Small size */
+  height: 120px;
+  border-radius: 50%;      /* Make it circular */
+  object-fit: cover;       /* Ensures image fits inside the circle */
+  border: 2px solid #ccc;  /* Light border around the image */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px auto;       /* Vertical spacing and centering */
+  display: block;          /* To apply margin auto */
+}
+
+
+/* Style all h2 headings (section titles) */
+h2 {
+  color: #0e76a8;                /* Same blue as header for brand consistency */
+}
+
+/* Style the page footer */
+footer {
+  text-align: center;            /* Center text */
+  padding: 10px;                 /* Space inside footer */
+  background-color: #0e76a8;     /* Blue background */
+  color: white;                  /* White text */
+}
+
+/* Style all form inputs and textareas */
+form input,
+form textarea {
+  width: 100%;                   /* Full width of the container */
+  margin-bottom: 10px;           /* Space below each input */
+  padding: 10px;                 /* Space inside each field */
+  border: 1px solid #ccc;        /* Light grey border */
+  border-radius: 5px;            /* Rounded corners */
+}
+
+/* Style the submit button */
+button {
+  background-color: #0e76a8;     /* Blue background */
+  color: white;                  /* White text */
+  border: none;                  /* Remove default border */
+  padding: 10px 20px;            /* Space inside the button */
+  cursor: pointer;               /* Show pointer when hovering */
+  border-radius: 5px;            /* Slightly rounded button */
+}
+
+/* Add hover effect to the button */
+button:hover {
+  background-color: #095a84;     /* Slightly darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section, header, footer {
+    padding: 10px;
+  }
+}
