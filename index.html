@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph Charles Jolofan Sakala | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -23,10 +23,11 @@
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
+        <img src="images/zambezi.png" alt="Profile Picture" class="profile-pic">
         <p>I am Joseph, a dedicated nurse educator with a growing passion for sofware development. I believe in lifelong learning and applying tech to improve education and health outcomes.</p>
     </section>
     
-<!-- Education Section -->
+    <!-- Education Section -->
     <section id="education">
         <h2>Education Background</h2>
         <ul>
@@ -36,8 +37,8 @@
             <a href="docs/CJJSakala_CV.pdf" download>Download My CV</a>
     </section>
 
-    <!-- Skills Section Continue tomorrow -->
-    <!-- Skills Section -->
+    
+  <!-- Skills Section -->
   <section id="skills">
     <h2>Programming Languages</h2>
     <ul>
@@ -67,10 +68,33 @@
     </article>
     <article>
       <h3>My First HTML Page</h3>
-      <p>A simple webpage that introduces me and shows my growing skills in web development. <a href="#">View project</a></p>
+      <p>A simple webpage that introduces me and shows my growing skills in web development. <a href="my-first-html-web.html">View project</a></p>
     </article>
   </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xovlnngo" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <!-- Spam filter -->
+      <input type="text" name="_gotcha" style="display:none"> 
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
   
-  
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Joseph C.J Sakala. Built with ❤️ during Hackathon 1 - PLP Academy.</p>
+  </footer>
 </body>
 </html>
