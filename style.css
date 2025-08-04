@@ -1,25 +1,25 @@
 /* Apply basic font and background to entire website */
 body {
-  font-family: Arial, sans-serif; /* Sets the font for the whole page */
-  margin: 0;                      /* Removes default browser margin */
-  padding: 0;                     /* Removes default browser padding */
+  font-family: Arial, sans-serif; 
+  margin: 0;                      
+  padding: 0;                     
   background: #f2f4f5;            /* Light grey background color */
   color: #333;                    /* Dark grey text color */
 }
 
 /* Style the header section (top of the page) */
 header {
-  background-color: #0e76a8;     /* A strong blue background */
-  color: white;                  /* White text color */
-  padding: 20px;                 /* Space inside the header */
-  text-align: center;            /* Center the text */
+  background-color: #0e76a8;     
+  color: white;                  
+  padding: 20px;                 
+  text-align: center;            
 }
 
 /* Style the navigation links inside the header */
 nav a {
-  margin: 0 15px;                /* Add space between links */
-  color: white;                  /* Make links white */
-  text-decoration: none;         /* Remove underline */
+  margin: 0 15px;                
+  color: white;                  
+  text-decoration: none;         
 }
 
 /* Change link color on hover only */
@@ -29,21 +29,62 @@ nav a:hover {
 
 /* Style all content sections */
 section {
-  padding: 20px;                 /* Space inside the section */
-  max-width: 800px;              /* Set a maximum width */
-  margin: auto;                  /* Center the section on the page */
+  padding: 20px;                 
+  max-width: 800px;              
+  margin: auto;                  
 }
 
 /* Profile image styling – clean and small */
 .profile-pic {
   width: 120px;            /* Small size */
   height: 120px;
-  border-radius: 50%;      /* Make it circular */
-  object-fit: cover;       /* Ensures image fits inside the circle */
-  border: 2px solid #ccc;  /* Light border around the image */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin: 20px auto;       /* Vertical spacing and centering */
-  display: block;          /* To apply margin auto */
+  border-radius: 50%;      
+  object-fit: cover;       
+  border: 2px solid #ccc;  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  margin: 20px auto;       
+  display: block;         
+}
+
+.about-text-panel p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+
+  /* New styles added below */
+  text-align: justify;           /* Justifies the text */
+  column-count: 2;               /* Splits into 2 columns */
+  column-gap: 2rem;              
+}
+
+/* Apply 2-column layout to main content */
+.main-content {
+  column-count: 2;               /* Split content into 2 columns */
+  column-gap: 3rem;              
+  text-align: justify;           
+  padding: 2rem;
+}
+
+/* 📍 Ensure individual sections don't break awkwardly */
+.section {
+  break-inside: avoid;           /* ✅ Prevents sections from being split across columns */
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Make sure headings and list items also align cleanly */
+.section h2, .section p, .section ul, .section li {
+  text-align: justify;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+  .main-content {
+    column-count: 1; /* Stacks content in one column on tablets/phones */
+  }
 }
 
 
@@ -55,35 +96,79 @@ h2 {
 /* Style the page footer */
 footer {
   text-align: center;            /* Center text */
-  padding: 10px;                 /* Space inside footer */
-  background-color: #0e76a8;     /* Blue background */
-  color: white;                  /* White text */
+  padding: 10px;                 
+  background-color: #0e76a8;    
+  color: white;                  
 }
 
 /* Style all form inputs and textareas */
 form input,
 form textarea {
-  width: 100%;                   /* Full width of the container */
-  margin-bottom: 10px;           /* Space below each input */
-  padding: 10px;                 /* Space inside each field */
-  border: 1px solid #ccc;        /* Light grey border */
-  border-radius: 5px;            /* Rounded corners */
+  width: 100%;                   
+  margin-bottom: 10px;           
+  padding: 10px;                 
+  border: 1px solid #ccc;        
+  border-radius: 5px;            
 }
 
 /* Style the submit button */
 button {
-  background-color: #0e76a8;     /* Blue background */
-  color: white;                  /* White text */
-  border: none;                  /* Remove default border */
-  padding: 10px 20px;            /* Space inside the button */
-  cursor: pointer;               /* Show pointer when hovering */
-  border-radius: 5px;            /* Slightly rounded button */
+  background-color: #0e76a8;     
+  color: white;                  
+  border: none;                  
+  padding: 10px 20px;            
+  cursor: pointer;               
+  border-radius: 5px;            
 }
 
-/* Add hover effect to the button */
+/* hover effect to the button */
 button:hover {
   background-color: #095a84;     /* Slightly darker blue on hover */
 }
+
+/* view my project button style*/
+.btn {
+  padding: 0.4rem 0.8rem;
+  background: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+
+/* General button styling */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Style for CV download button */
+.download-btn::before {
+  content: "⬇ ";
+  margin-right: 5px;
+}
+
+
 
 /* Responsive design for smaller screens */
 @media screen and (max-width: 600px) {
